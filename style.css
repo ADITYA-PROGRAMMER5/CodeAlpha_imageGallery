@@ -188,3 +188,56 @@ body {
 .next-btn {
     right: 30px;
 }
+
+@media (max-width: 768px) {
+
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .gallery-item {
+        height: 220px;
+    }
+
+    .header h1 {
+        font-size: 30px;
+    }
+
+    .prev-btn {
+        left: 10px;
+    }
+
+    .next-btn {
+        right: 10px;
+    }
+
+    .close-btn {
+        top: 15px;
+        right: 15px;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-item {
+        height: 250px;
+    }
+
+    .lightbox {
+        padding: 15px;
+    }
+
+    .lightbox-content img {
+        max-height: 65vh;
+    }
+
+    .filter-btn {
+        padding: 8px 16px;
+    }
+}
