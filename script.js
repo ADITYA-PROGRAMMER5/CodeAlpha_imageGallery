@@ -64,3 +64,21 @@ const images = [
     }
 
 ];
+
+const gallery = document.getElementById("gallery");
+
+const lightbox = document.getElementById("lightbox");
+
+const lightboxImage = document.getElementById("lightboxImage");
+
+const lightboxTitle = document.getElementById("lightboxTitle");
+
+const imageCounter = document.getElementById("imageCounter");
+
+const closeBtn = document.getElementById("closeBtn");
+
+const prevBtn = document.getElementById("prevBtn");
+
+const nextBtn = document.getElementById("nextBtn");
+
+const filterButtons = document.querySelectorAll(".filter-btn");
