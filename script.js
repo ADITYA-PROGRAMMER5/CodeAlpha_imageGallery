@@ -217,3 +217,7 @@ function closeLightbox() {
 
 }
 
+nextBtn.addEventListener("click", nextImage);
+prevBtn.addEventListener("click", previousImage);
+closeBtn.addEventListener("click", closeLightbox);
+
