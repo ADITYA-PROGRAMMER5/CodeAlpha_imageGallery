@@ -230,3 +230,22 @@ lightbox.addEventListener("click", (event) => {
 
 });
 
+document.addEventListener("keydown", (event) => {
+    if (!lightbox.classList.contains("active")) return;
+
+
+    if (event.key === "ArrowRight") {
+        nextImage();
+    }
+
+
+    else if (event.key === "ArrowLeft") {
+        previousImage();
+    }
+
+
+    else if (event.key === "Escape") {
+        closeLightbox();
+    }
+
+});
