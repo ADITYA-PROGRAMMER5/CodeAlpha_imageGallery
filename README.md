@@ -40,6 +40,7 @@ Image-Gallery/
 ├── style.css
 ├── script.js
 └── README.md
+└──  LICENSE
 ```
 
 ## 🚀 How to Run the Project
