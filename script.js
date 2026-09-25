@@ -119,3 +119,42 @@ function displayImages(imageList) {
     });
 
 }
+
+filterButtons.forEach(button => {
+
+    button.addEventListener("click", () => {
+
+        const category = button.dataset.category;
+
+
+        filterButtons.forEach(btn => {
+
+            btn.classList.remove("active");
+
+        });
+
+        button.classList.add("active");
+
+
+        if (category === "all") {
+
+            currentImages = [...images];
+
+        } 
+        else {
+
+            currentImages = images.filter(image => {
+
+                return image.category === category;
+
+            });
+
+        }
+
+
+        displayImages(currentImages);
+
+
+    });
+
+});
