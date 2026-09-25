@@ -171,3 +171,18 @@ function openLightbox(index) {
 
 }
 
+function updateLightbox() {
+
+    const image = currentImages[currentIndex];
+
+    if (!image) return;
+
+    lightboxImage.src = image.url;
+    lightboxImage.alt = image.title;
+    lightboxTitle.textContent = image.title;
+
+    imageCounter.textContent =
+        `${currentIndex + 1} / ${currentImages.length}`;
+
+}
+
