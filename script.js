@@ -82,3 +82,6 @@ const prevBtn = document.getElementById("prevBtn");
 const nextBtn = document.getElementById("nextBtn");
 
 const filterButtons = document.querySelectorAll(".filter-btn");
+
+let currentImages = [...images];
+let currentIndex = 0;
