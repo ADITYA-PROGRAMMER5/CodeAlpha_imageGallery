@@ -221,3 +221,12 @@ nextBtn.addEventListener("click", nextImage);
 prevBtn.addEventListener("click", previousImage);
 closeBtn.addEventListener("click", closeLightbox);
 
+
+lightbox.addEventListener("click", (event) => {
+
+    if (event.target === lightbox) {
+        closeLightbox();
+    }
+
+});
+
