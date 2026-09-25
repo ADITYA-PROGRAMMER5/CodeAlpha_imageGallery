@@ -85,3 +85,37 @@ const filterButtons = document.querySelectorAll(".filter-btn");
 
 let currentImages = [...images];
 let currentIndex = 0;
+
+function displayImages(imageList) {
+
+    gallery.innerHTML = "";
+
+    imageList.forEach((image, index) => {
+
+        const item = document.createElement("div");
+
+        item.classList.add("gallery-item");
+
+        item.innerHTML = `
+            <img
+                src="${image.url}"
+                alt="${image.title}"
+                loading="lazy"
+            >
+
+            <div class="image-overlay">
+                <h3>${image.title}</h3>
+            </div>
+        `;
+
+        item.addEventListener("click", () => {
+
+            openLightbox(index);
+
+        });
+
+        gallery.appendChild(item);
+
+    });
+
+}
