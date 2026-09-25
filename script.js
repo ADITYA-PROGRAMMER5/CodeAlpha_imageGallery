@@ -140,7 +140,7 @@ filterButtons.forEach(button => {
 
             currentImages = [...images];
 
-        } 
+        }
         else {
 
             currentImages = images.filter(image => {
