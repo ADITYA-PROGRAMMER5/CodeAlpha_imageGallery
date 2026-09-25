@@ -249,3 +249,6 @@ document.addEventListener("keydown", (event) => {
     }
 
 });
+
+
+displayImages(currentImages);
