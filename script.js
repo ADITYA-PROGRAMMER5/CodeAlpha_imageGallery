@@ -158,3 +158,16 @@ filterButtons.forEach(button => {
     });
 
 });
+
+function openLightbox(index) {
+
+    currentIndex = index;
+
+    updateLightbox();
+
+    lightbox.classList.add("active");
+
+    document.body.style.overflow = "hidden";
+
+}
+
