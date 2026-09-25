@@ -186,3 +186,15 @@ function updateLightbox() {
 
 }
 
+function nextImage() {
+
+    currentIndex++;
+
+    if (currentIndex >= currentImages.length) {
+        currentIndex = 0;
+    }
+
+    updateLightbox();
+
+}
+
